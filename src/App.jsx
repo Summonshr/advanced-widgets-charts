@@ -47,13 +47,13 @@ function App() {
       <h1 className='text-2xl font-semibold text-blue-900 text-center p-5'>Advanced widgets for Meroshare - Charts</h1>
       <div class="grid grid-cols-[repeat(auto-fill,_minmax(30rem,_1fr))]">
         <div>
-          <Chart data={{ s: data.s, v: data.i }} title="Company - Investment wise" />
+          <Chart data={{ s: data.s, v: data.i }} thresold={2} title="Company - Investment wise" />
         </div>
         <div>
-          <Chart data={{ s: data.s, v: data.t }} title="Company - Value wise" />
+          <Chart data={{ s: data.s, v: data.t }} thresold={2} title="Company - Value wise" />
         </div>
         <div>
-          <Chart data={{ s: data.s, v: pvalues }} title="Company - Profit wise" />
+          <Chart data={{ s: data.s, v: pvalues }} thresold={2} title="Company - Profit wise" />
         </div>
         <div>
           <Chart data={{ s: labels, v: ivalues }} title="Sector - Investment wise" />
