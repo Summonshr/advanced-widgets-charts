@@ -31,7 +31,7 @@ export default function (props) {
     const chartSeries = data.v;
 
     return (
-        <div className="h-[30rem] w-[30rem] text-center">
+        <div className="h-[25rem] w-[30rem] text-center">
             <h2 className='text-2xl font-semibold text-blue-900'>{props.title}</h2>
             <ReactApexChart
                 options={chartOptions}

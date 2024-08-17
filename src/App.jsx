@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       <h1 className='text-2xl font-semibold text-blue-900 text-center p-5'>Advanced widgets for Meroshare - Charts</h1>
-      <div class="grid grid-cols-[repeat(auto-fill,_minmax(30rem,_1fr))] gap-4">
+      <div class="grid grid-cols-[repeat(auto-fill,_minmax(30rem,_1fr))]">
         <div>
           <Chart data={{ s: data.s, v: data.i }} title="Company - Investment wise" />
         </div>
