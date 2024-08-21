@@ -1,11 +1,11 @@
-import { useSearchParams } from 'react-router-dom';
+import {  useNavigate, useSearchParams } from 'react-router-dom';
 import Chart from './charts/Chart';
 import { companies, sectors } from './constants/companies';
-
+import { useEffect, useState } from 'react';
 function App() {
-  const [searchParams] = useSearchParams();
-
-  if (!searchParams.get('data')) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [data, setData] = useState(JSON.parse(searchParams.get('data')));
+  if (data == null) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="text-center bg-white p-8 rounded-lg shadow-md max-w-md">
@@ -20,10 +20,11 @@ function App() {
       </div>
     )
   }
-  const data = JSON.parse(searchParams.get('data'));
-
   let sectorDataByInvestment = {};
   let sectorDataByValue = {};
+  useEffect(()=> {
+    setSearchParams({  });
+  },[])
 
   data.s.map((company, i) => {
     const sectorName = sectors[companies.find(c => c.symbol === company)?.sid] || 'Other';
@@ -45,7 +46,7 @@ function App() {
   return (
     <div>
       <h1 className='text-2xl font-semibold text-blue-900 text-center p-5'>Advanced widgets for Meroshare - Charts</h1>
-      <div class="grid grid-cols-[repeat(auto-fill,_minmax(30rem,_1fr))]">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(30rem,_1fr))]">
         <div>
           <Chart data={{ s: data.s, v: data.i }} thresold={2} title="Company - Investment wise" />
         </div>
