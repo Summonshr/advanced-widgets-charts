@@ -1,4 +1,4 @@
-import {  useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import Chart from './charts/Chart';
 import { companies, sectors } from './constants/companies';
 import { useEffect, useState } from 'react';
