@@ -51,22 +51,21 @@ export default function PieChart(props) {
     const colors = groupedData.s.map((label) => getColorFromLabel(label));
 
     const chartOptions = {
+        title: {
+            text: props.title,
+            align: 'center',
+            margin: 20,
+            style: {
+                fontSize: '18px',
+                fontWeight: 'bold',
+                color: '#233876'
+            }
+        },
         chart: {
             type: 'pie',
         },
         labels: groupedData.s,
         colors: colors.slice(0, groupedData.s.length),
-        responsive: [{
-            breakpoint: 480,
-            options: {
-                chart: {
-                    width: 200
-                },
-                legend: {
-                    position: 'bottom'
-                }
-            }
-        }],
         tooltip: {
             y: {
                 formatter: function (value) {
@@ -79,8 +78,7 @@ export default function PieChart(props) {
     const chartSeries = groupedData.v;
 
     return (
-        <div className="h-[25rem] w-[30rem] text-center">
-            <h2 className='text-2xl font-semibold text-blue-900'>{props.title}</h2>
+        <div className=" text-center mt-8">
             <ReactApexChart
                 options={chartOptions}
                 series={chartSeries}
