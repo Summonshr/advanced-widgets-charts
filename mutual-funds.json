@@ -78,5 +78,69 @@
     {
         "symbol": "MMF1",
         "nav": "11.97"
-    }
+    },
+            {
+            "symbol": "KDBY",
+            "date": "12.52"
+        },
+        {
+            "symbol": "NICFC",
+            "date": "12.7"
+        },
+        {
+            "symbol": "GIBF1",
+            "date": "13.51"
+        },
+        {
+            "symbol": "NSIF2",
+            "date": "14.23"
+        },
+        {
+            "symbol": "SAGF",
+            "date": "12.83"
+        },
+        {
+            "symbol": "NIBLGF",
+            "date": "12.40"
+        },
+        {
+            "symbol": "SFEF",
+            "date": "12.84"
+        },
+        {
+            "symbol": "PRSF",
+            "date": "13.20"
+        },
+        {
+            "symbol": "C30MF",
+            "date": "12.23"
+        },
+        {
+            "symbol": "SIGS3",
+            "date": "12.62"
+        },
+        {
+            "symbol": "RMF2",
+            "date": "13.69"
+        },
+        {
+            "symbol": "LVF2",
+            "date": "12.41"
+        },
+        {
+            "symbol": "H8020",
+            "date": "13.11"
+        },
+        {
+            "symbol": "NICGF2",
+            "date": "10.9"
+        },
+        {
+            "symbol": "NIBLSTF",
+            "date": "10.85"
+        },
+        {
+            "symbol": "KSY",
+            "date": "11.05"
+        }
 ]
