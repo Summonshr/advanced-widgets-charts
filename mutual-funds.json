@@ -1,1 +1,82 @@
-
+[
+    {
+        "symbol": "SAEF",
+        "nav": "13.93"
+    },
+    {
+        "symbol": "SEF",
+        "nav": "11.97"
+    },
+    {
+        "symbol": "CMF1",
+        "nav": "12.71"
+    },
+    {
+        "symbol": "NICGF",
+        "nav": "12.93"
+    },
+    {
+        "symbol": "NBF2",
+        "nav": "12.51"
+    },
+    {
+        "symbol": "CMF2",
+        "nav": "12.67"
+    },
+    {
+        "symbol": "NMB50",
+        "nav": "13.61"
+    },
+    {
+        "symbol": "SIGS2",
+        "nav": "12.00"
+    },
+    {
+        "symbol": "NICBF",
+        "nav": "12.16"
+    },
+    {
+        "symbol": "SFMF",
+        "nav": "13.63"
+    },
+    {
+        "symbol": "LUK",
+        "nav": "12.87"
+    },
+    {
+        "symbol": "SLCF",
+        "nav": "12.52"
+    },
+    {
+        "symbol": "KEF",
+        "nav": "12.01"
+    },
+    {
+        "symbol": "SBCF",
+        "nav": "12.39"
+    },
+    {
+        "symbol": "PSF",
+        "nav": "13.24"
+    },
+    {
+        "symbol": "NIBSF2",
+        "nav": "11.10"
+    },
+    {
+        "symbol": "NICSF",
+        "nav": "12.83"
+    },
+    {
+        "symbol": "RMF1",
+        "nav": "12.65"
+    },
+    {
+        "symbol": "NBF3",
+        "nav": "11.70"
+    },
+    {
+        "symbol": "MMF1",
+        "nav": "11.97"
+    }
+]
